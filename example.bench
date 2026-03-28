@@ -1,0 +1,11 @@
+# ISCAS89 simple test circuit
+INPUT(A)
+INPUT(B)
+INPUT(C)
+OUTPUT(out1)
+OUTPUT(out2)
+
+x1 = AND(A, B)
+x2 = OR(x1, C)
+out1 = NOT(x2)
+out2 = XOR(A, x1)
